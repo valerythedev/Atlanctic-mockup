@@ -1,0 +1,276 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Urbanist', sans-serif;
+  font-family: 'Italiana', serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+header {
+  height: 200px;
+  width: 100%;
+}
+
+.top {
+  height: 500px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.izquierda {
+  width: 30%;
+  height: 500px;
+  border-right: 1px solid lightgray;
+  float: left;
+}
+
+.medio {
+  width: 40%;
+  height: 500px;
+  border-right: 1px solid lightgray;
+  float: left;
+}
+
+.derecha {
+  width: 30%;
+  height: 500px;
+  border-left: 1px solid lightgrey;
+  float: left;
+  padding-left: 2px;
+}
+
+.derecha section {
+  height: 125px;
+  border-bottom: 1px solid lightgray;
+}
+
+.abajo {
+  height: 305px;
+  width: 100%;
+  border-top: 1px solid lightgrey;
+  float: left;
+}
+
+.abajo section {
+  width: 25%;
+  float: left;
+  height: 300px;
+  border-right: 1px solid lightgrey;
+}
+
+/* header */
+header img {
+  margin: auto;
+  display: block;
+  height: 195px;
+  padding: 10px;
+}
+
+.bars {
+  float: left;
+  padding: 15px;
+  margin: 10px;
+}
+
+.bars :nth-child(1) {
+  margin-right: 10px;
+}
+
+li {
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+  float: left;
+  margin: 1% 2% 0 2%;
+}
+
+.sing {
+  float: right;
+  width: 20%;
+}
+
+.sing button {
+  background: rgb(195, 24, 24);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  height: 30px;
+  margin-left: 15px;
+  padding: 10px;
+}
+
+.sing a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+}
+
+/* left side */
+.izquierda img {
+  height: 188px;
+  margin: auto;
+  display: block;
+}
+
+.izquierda a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: black;
+  padding: 15px;
+}
+
+/* Center */
+.medio a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: black;
+  padding: 15px;
+  text-align: center;
+  margin: auto;
+  display: block;
+}
+
+.medio img {
+  height: 250px;
+  margin: auto;
+  display: block;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.medio p {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/* Right sections */
+.derecha img {
+  height: 100px;
+  padding: 1px;
+  float: left;
+}
+
+.derecha h3 {
+  text-align: left;
+  float: left;
+  width: 70%;
+  text-align: left;
+  padding: 30px;
+}
+.spart span, .diez span, .once span, .derecha span{
+  padding: 30px;
+}
+.abajo img {
+  height: 160px;
+  margin: auto;
+  display: block;
+}
+
+.abajo a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: black;
+  padding: 15px;
+  text-align: left;
+}
+.abajo p{
+  font-size: 1.2rem;
+  text-align: left;
+  padding: 15px;
+}
+/* media qs */
+
+@media (max-width:500px){
+  .izquierda{
+    display: none;
+  }
+nav{
+  display: none;
+}
+.sing a{
+  display: none;
+}
+.sing button{
+  margin-top: 10px;
+  padding: 9px;
+}
+.derecha{
+  width: 100%;
+  border-left: none;
+}
+.derecha img{
+  /* display: none; */
+  padding: 10px;
+}
+.abajo section{
+  width: 100%;
+  border: none;
+}
+.medio{
+  width: 100%;
+  border-right: none;
+}
+.abajo{
+  margin-top: 5%;
+  border-top: none;
+}
+}
+@media screen and (min-width: 501px) and (max-width: 768px) {
+  /* CSS styles for screens between 768px and 1024px */
+  .izquierda{
+    display: none;
+  }
+  nav{
+    display: none;
+  }
+  .medio{
+    width: 60%;
+  }
+  .derecha{
+    width: 30%;
+    margin-bottom: 50px;
+  }
+  .derecha img{
+    padding: 15px;
+    margin: -10px;
+  }
+  .derecha  h3{
+    float:none;
+    width: none;
+    padding: 0px;
+    margin-left: 77px;
+  }
+  .abajo section{
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  /* CSS styles for screens between 768px and 1024px */
+  .izquierda{
+    display: none;
+  }
+  .medio{
+    width: 100%;
+  }
+  .derecha{
+    width: 100%;
+  }
+  .abajo section{
+    width: 50%;
+  }
+  .derecha img{
+    /* display: none; */
+    padding: 10px;
+  }
+}
